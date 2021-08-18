@@ -7,6 +7,8 @@ namespace UnitTestingExercise.Tests
     {
         [Theory]
         [InlineData(1,2,3,6)]
+
+        [InlineData(4,20,8,80)]
         public void Add(int num1, int num2, int num3, int expected)
         {
             //Arrange
