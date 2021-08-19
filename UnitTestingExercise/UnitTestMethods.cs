@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+
+    
 namespace UnitTestingExercise
 {
     public class UnitTestMethods
@@ -35,12 +38,18 @@ namespace UnitTestingExercise
 
 
         // Create 2 methods that will utilize the [Fact] tests you wrote
-        public double GetPI()
+        public double CanFindMax(int num1, int num2)
         {
-            return Math.PI;
 
+            if (num1 > num2)
+                return num1;
+            else 
+                return num2;
+           
         }
-
-
+        public int CanFindAreaSquare(int num1, int num2)
+        {
+            return num1 * num2;
+        }
     }
 }
